@@ -58,7 +58,6 @@
         <Buda class="fadeOut scrolldown"/>
         <h2
           class="
-            grow
             fadeIn
             text-4xl
             tracking-tight
@@ -77,7 +76,7 @@
       <div
         class="-mt-32 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
       >
-        <div class="fadeIn flex flex-col rounded-lg overflow-hidden">
+        <div class="grow fadeIn flex flex-col rounded-lg overflow-hidden">
           <div class="flex-1 p-6 flex flex-col justify-between">
             <div class="flex-1">
               <div class="block mt-2">
@@ -89,29 +88,9 @@
                 </p>
               </div>
             </div>
-            <!-- <div class="mt-6 flex items-center">
-              <nuxt-link
-                :to="localePath('design')"
-                class="
-                  mt-8
-                  block
-                  w-full
-                  bg-gray-900
-                  border border-gray-800
-                  rounded-md
-                  py-2
-                  text-sm
-                  font-semibold
-                  text-white text-center
-                  hover:bg-gray-700
-                "
-              >
-                {{ $t('design.cta') }}
-              </nuxt-link>
-            </div> -->
           </div>
         </div>
-        <div class="fadeIn flex flex-col rounded-lg overflow-hidden">
+        <div class="grow fadeIn flex flex-col rounded-lg overflow-hidden">
           <div class="flex-1 p-6 flex flex-col justify-between">
             <div class="flex-1">
               <div class="block mt-2">
@@ -145,7 +124,7 @@
             </div> -->
           </div>
         </div>
-        <div class="fadeIn flex flex-col rounded-lg overflow-hidden">
+        <div class="grow fadeIn flex flex-col rounded-lg overflow-hidden">
           <div class="flex-1 p-6 flex flex-col justify-between">
             <div class="flex-1">
               <div class="block mt-2">
