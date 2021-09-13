@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "i18n": "^0.13.3",
+    "lax.js": "^2.0.3",
+    "nuxt": "^2.15.7",
+    "nuxt-i18n": "^6.28.1"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.0",

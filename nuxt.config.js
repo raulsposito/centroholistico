@@ -38,9 +38,30 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'nuxt-i18n',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  i18n: {
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
+    vueI18nLoader: true,
+    locales: [
+      { code: 'en', name: 'English' },
+      { code: 'es', name: 'Español' },
+    ],
+  },
+
+
+  googleFonts: {
+    families: {
+      Inter: [400, 500, 700],
+    },
+    googleFonts: {
+      download: true,
+    },
+  },
 }
