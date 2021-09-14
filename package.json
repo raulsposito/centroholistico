@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "node server.js",
     "generate": "nuxt generate"
   },
   "dependencies": {
     "core-js": "^3.15.1",
+    "express": "^4.17.1",
     "i18n": "^0.13.3",
     "lax.js": "^2.0.3",
     "nuxt": "^2.15.7",
