@@ -1,6 +1,5 @@
 <template>
   <div class="font-sans min-h-screen flex flex-col">
-    <Nav />
     <main class="flex-grow">
       <Nuxt />
     </main>

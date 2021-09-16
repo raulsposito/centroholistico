@@ -1,9 +1,9 @@
 <i18n>
 {
   "en": {
-    "title": "Holistic Therapy",
+    "title": "Reiki",
     "design": {
-      "subtitle": "Reiki",
+      "subtitle": "Holistic Therapy",
       "description": "Lorem Ipsum",
       "cta": "Lorem Ipsum"
     },
@@ -56,8 +56,17 @@
     <div class="relative max-w-7xl mx-auto">
       <div class="text-center content-center py-20">
         <Buda class="fadeOut scrolldown"/>
+        <p class="-pt-20 bubble">💮</p>
+        <p class="fadeIn bubble -pt-10">💮</p>
+        <p class="-pt-10 bubble">💮</p>
+        <p class="fadeIn bubble -pt-16">💮</p>
+        <p class="-pt-10 bubble">💮</p>
+        <p class="fadeIn bubble -pt-30">💮</p>
+        <p class="-pt-22 bubble">💮</p>
+        <p class="fadeIn bubble -pt-10">💮</p>
         <h2
           class="
+            grow
             fadeIn
             text-4xl
             tracking-tight
@@ -256,6 +265,33 @@ export default {
           [0, 1],
         ],
       },
+    })
+    lax.addElements('.bubble', {
+      scrollY: {
+        translateY: [
+          ["screenHeight/4", "screenHeight * 2"],
+          ["Math.random()*screenHeight", "Math.random()*screenHeight*2"]
+        ],
+        opacity: [
+          ["screenHeight/4", "screenHeight/2"],
+          [0, 1]
+        ],
+        scale: [[0], ["(Math.random()*0.8)+0.2"]],
+        translateX: [[0], ["index*(screenWidth/25)-50"]],
+        transform: [
+          [0, 4000],
+          [0, "(Math.random() + 0.8) * 1000"],
+          {
+            cssFn: function (val) {
+              return `rotateX(${val % 360}deg)`
+            }
+          }
+        ],
+        rotate: [
+          [0, 4000],
+          [0, "(Math.random() - 0.5) * 1000"],
+        ],
+      }
     })
     lax.addElements('.letter-a', {
       scrollY: {
